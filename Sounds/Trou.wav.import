@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Trou.wav-fd8e16c628aa3ff336d411fe975ae286.sample"
+
+[deps]
+
+source_file="res://Sounds/Trou.wav"
+dest_files=[ "res://.import/Trou.wav-fd8e16c628aa3ff336d411fe975ae286.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
