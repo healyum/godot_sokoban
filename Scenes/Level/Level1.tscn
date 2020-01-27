@@ -19,10 +19,10 @@ tile_data = PoolIntArray( 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0
 [node name="Boxes" type="Node2D" parent="."]
 
 [node name="Box" parent="Boxes" instance=ExtResource( 3 )]
-position = Vector2( 381.822, 126.333 )
+position = Vector2( 352, 128 )
 
 [node name="Box2" parent="Boxes" instance=ExtResource( 3 )]
-position = Vector2( 349.296, 192.083 )
+position = Vector2( 384, 128 )
 
 [node name="Box3" parent="Boxes" instance=ExtResource( 3 )]
-position = Vector2( 349.713, 161.892 )
+position = Vector2( 352, 160 )
