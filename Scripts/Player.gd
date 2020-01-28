@@ -58,3 +58,4 @@ func get_movedir():
 		movedir = Vector2.ZERO
 	if movedir != Vector2.ZERO:
 		ray.cast_to = movedir * tile_size / 2
+		ray.force_raycast_update() #useful ?
