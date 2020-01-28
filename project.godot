@@ -53,7 +53,8 @@ ui_down={
 
 2d_physics/layer_1="Player"
 2d_physics/layer_2="Wall"
-2d_physics/layer_3="Ball"
+2d_physics/layer_3="Floor"
+2d_physics/layer_4="Box"
 
 [rendering]
 

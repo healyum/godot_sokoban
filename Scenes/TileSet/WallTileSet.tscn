@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 15.9485, 15.8278 )
 
-[node name="TileSet" type="Node2D"]
+[node name="WallTileset" type="Node2D"]
 
 [node name="Grass" type="Sprite" parent="."]
 position = Vector2( 46.2585, 37.7837 )
@@ -17,12 +17,15 @@ __meta__ = {
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Grass"]
+collision_layer = 2
+collision_mask = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Grass/StaticBody2D"]
 visible = false
 shape = SubResource( 1 )
 
 [node name="Wall" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 88.4275, 39.4047 )
 texture = ExtResource( 1 )
 region_enabled = true
@@ -32,42 +35,15 @@ __meta__ = {
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Wall"]
+collision_layer = 2
+collision_mask = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/StaticBody2D"]
 visible = false
 shape = SubResource( 1 )
 
-[node name="Floor" type="Sprite" parent="."]
-position = Vector2( 47.4191, 91.1764 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 64, 0, 32, 32 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Floor"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D"]
-visible = false
-shape = SubResource( 1 )
-
-[node name="Floor_Curved" type="Sprite" parent="."]
-position = Vector2( 89.3, 92.0217 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 96, 0, 32, 32 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Floor_Curved"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor_Curved/StaticBody2D"]
-visible = false
-shape = SubResource( 1 )
-
 [node name="Box" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 142.648, 91.248 )
 texture = ExtResource( 1 )
 region_enabled = true
@@ -77,6 +53,7 @@ __meta__ = {
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Box"]
+collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Box/StaticBody2D"]
 visible = false

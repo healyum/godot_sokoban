@@ -8,7 +8,7 @@ extents = Vector2( 16.023, 16.1962 )
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 position = Vector2( 400.952, 180.429 )
-collision_mask = 6
+collision_mask = 10
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -16,15 +16,44 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
-offset = Vector2( 16, 16 )
+centered = false
 region_enabled = true
 region_rect = Rect2( 192, 0, 32, 32 )
 region_filter_clip = true
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
+position = Vector2( 16, 16 )
 shape = SubResource( 1 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 16, 16 )
 enabled = true
 cast_to = Vector2( 0, 32 )
+
+[node name="RayDown" type="RayCast2D" parent="."]
+visible = false
+position = Vector2( 16, 16 )
+enabled = true
+cast_to = Vector2( 0, 32 )
+collide_with_areas = true
+
+[node name="RayUp" type="RayCast2D" parent="."]
+visible = false
+position = Vector2( 16, 16 )
+enabled = true
+cast_to = Vector2( 0, -32 )
+
+[node name="RayLeft" type="RayCast2D" parent="."]
+visible = false
+position = Vector2( 16, 16 )
+enabled = true
+cast_to = Vector2( -32, 0 )
+
+[node name="RayRight" type="RayCast2D" parent="."]
+visible = false
+position = Vector2( 16, 16 )
+enabled = true
+cast_to = Vector2( 32, 0 )

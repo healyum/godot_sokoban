@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Tileset/default_tileset.png" type="Texture" id=1]
+
+[node name="FloorTileset" type="Node2D"]
+
+[node name="Floor" type="Sprite" parent="."]
+position = Vector2( 47.4191, 91.1764 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 32, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Floor_Curved" type="Sprite" parent="."]
+position = Vector2( 89.3, 92.0217 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 32, 32 )
+__meta__ = {
+"_edit_group_": true
+}
