@@ -48,7 +48,6 @@ region_enabled = true
 region_rect = Rect2( 160, 0, 32, 32 )
 
 [node name="Area2D" type="Area2D" parent="Boxes/Sprite"]
-collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boxes/Sprite/Area2D"]
 position = Vector2( 16, 16 )
