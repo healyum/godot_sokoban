@@ -15,6 +15,7 @@ func _ready():
 	target_position = position
 
 func _physics_process(delta):
+	
 	# MOVEMENT
 	if ray.is_colliding():
 		position = last_position
