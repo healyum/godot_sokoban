@@ -1,10 +1,6 @@
 extends KinematicBody2D
 
 onready var ray = $RayCast2D
-onready var rayLeft = $RayLeft
-onready var rayRight = $RayRight
-onready var rayUp = $RayUp
-onready var rayDown = $RayDown
 
 var speed = 256 # big number because it's multiplied by delta
 var tile_size = 32 # size in pixels of tiles on the grid
@@ -41,16 +37,7 @@ func get_movedir():
 	var RIGHT = Input.is_action_pressed("ui_right")
 	var UP = Input.is_action_pressed("ui_up")
 	var DOWN = Input.is_action_pressed("ui_down")
-	
-#	if LEFT && !rayLeft.is_colliding():
-#		movedir.x = -int(LEFT) + int(RIGHT) # if pressing both directions this will return 0
-#	elif RIGHT && !rayRight.is_colliding():
-#		movedir.x = -int(LEFT) + int(RIGHT) # if pressing both directions this will return 0
-#	elif UP && !rayUp.is_colliding():
-#		movedir.y = -int(UP) + int(DOWN)
-#	elif DOWN && !rayDown.is_colliding():
-#		movedir.y = -int(UP) + int(DOWN)
-		
+
 	movedir.x = -int(LEFT) + int(RIGHT)
 	movedir.y = -int(UP) + int(DOWN)
 	

@@ -33,28 +33,3 @@ position = Vector2( 16, 16 )
 enabled = true
 cast_to = Vector2( 0, 32 )
 collide_with_areas = true
-
-[node name="RayDown" type="RayCast2D" parent="."]
-visible = false
-position = Vector2( 16, 16 )
-enabled = true
-cast_to = Vector2( 0, 32 )
-collide_with_areas = true
-
-[node name="RayUp" type="RayCast2D" parent="."]
-visible = false
-position = Vector2( 16, 16 )
-enabled = true
-cast_to = Vector2( 0, -32 )
-
-[node name="RayLeft" type="RayCast2D" parent="."]
-visible = false
-position = Vector2( 16, 16 )
-enabled = true
-cast_to = Vector2( -32, 0 )
-
-[node name="RayRight" type="RayCast2D" parent="."]
-visible = false
-position = Vector2( 16, 16 )
-enabled = true
-cast_to = Vector2( 32, 0 )
