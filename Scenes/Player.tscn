@@ -32,4 +32,33 @@ shape = SubResource( 1 )
 position = Vector2( 16, 16 )
 enabled = true
 cast_to = Vector2( 0, 32 )
+collision_mask = 10
+collide_with_areas = true
+
+[node name="RayUP" type="RayCast2D" parent="."]
+position = Vector2( 16, 16 )
+enabled = true
+cast_to = Vector2( 0, -16 )
+collision_mask = 8
+collide_with_areas = true
+
+[node name="RayDOWN" type="RayCast2D" parent="."]
+position = Vector2( 16, 16 )
+enabled = true
+cast_to = Vector2( 0, 16 )
+collision_mask = 8
+collide_with_areas = true
+
+[node name="RayLEFT" type="RayCast2D" parent="."]
+position = Vector2( 16, 16 )
+enabled = true
+cast_to = Vector2( -16, 0 )
+collision_mask = 8
+collide_with_areas = true
+
+[node name="RayRIGHT" type="RayCast2D" parent="."]
+position = Vector2( 16, 16 )
+enabled = true
+cast_to = Vector2( 16, 0 )
+collision_mask = 8
 collide_with_areas = true

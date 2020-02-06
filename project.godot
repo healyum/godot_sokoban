@@ -8,14 +8,20 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Sprite",
+"class": "Box",
+"language": "GDScript",
+"path": "res://Scripts/Box.gd"
+} ]
 _global_script_class_icons={
-
+"Box": ""
 }
 
 [application]
 
 config/name="Sokoban"
+run/main_scene="res://Scenes/Level/Level1.tscn"
 config/icon="res://icon.png"
 
 [input]
